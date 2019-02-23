@@ -1,2 +1,0 @@
-# RecorrerArreglo
-Arreglos
