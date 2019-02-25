@@ -48,6 +48,9 @@ public class InterfazArreglo extends javax.swing.JFrame {
 
     public InterfazArreglo() {
         initComponents();
+         n1.setText("");
+        n2.setText("");
+        n3.setText("");
         setLocationRelativeTo(null);
         setTitle("Array");
         setResizable(false);
@@ -987,25 +990,23 @@ public class InterfazArreglo extends javax.swing.JFrame {
     private javax.swing.JButton r3;
     // End of variables declaration//GEN-END:variables
 
-    public void agregarDatos(int a) {
+    public void agregarDatos(int cantidadElementos) {
 
-        for (int i = 0; i < a; i++) {
+        for (int i = 0; i < cantidadElementos; i++) {
             lista.add(i, ((int) (Math.random() * 999 + 1)));
         }
     }
 
     public void recorrerFOR() {
         for (int i = 0; i < lista.size(); i++) {
-            System.out.println(i + "-->" + lista.get(i));
-            //   f2.setText(i + " = " + String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
-
+                      //System.out.println(i + "-->" + lista.get(i)); 
+            f2.setText(String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
         }
     }
 
     public void recorrerForEach() {
         lista.forEach((i) -> {
-            System.out.println("-->" + (i));
-            //    f5.setText(String.valueOf(i));
+           f5.setText(String.valueOf(lista.get(i)));
         });
     }
 
@@ -1013,14 +1014,14 @@ public class InterfazArreglo extends javax.swing.JFrame {
         Iterator<Integer> iterador = lista.iterator();
         while (iterador.hasNext()) {
             Integer llave = iterador.next();
-            System.out.println("-->" + (llave));
-            //   f6.setText(String.valueOf(llave));
+            f6.setText(String.valueOf(llave));
         }
     }
 
     public void mejorTiempo(long forM, long forEachm, long iteraM) {
 
-        if (forM < forEachm && forEachm < iteraM) {
+        if((l2.getText() != "0") &&(l11.getText() != "0") &&(l17.getText() != "0")){
+             if (forM < forEachm && forEachm < iteraM) {
             n1.setText("For");
             n2.setText("ForEach");
             n3.setText("Iterator");
@@ -1045,6 +1046,11 @@ public class InterfazArreglo extends javax.swing.JFrame {
             n2.setText("For");
             n3.setText("ForEach");
         }
+        } else{
+             n1.setText("");
+            n2.setText("");
+            n3.setText("");
+        }
 
     }
 
@@ -1061,6 +1067,41 @@ public class InterfazArreglo extends javax.swing.JFrame {
         contFor = 1;
         contForEach = 1;
         contIterator = 1;
+        
+        jl2.setText("0");
+        jl3.setText("0");
+        jl4.setText("0");
+        f2.setText("");
+        f5.setText("");
+        f6.setText("");
+      
+        //////////////////
+        
+        l2.setText("0");
+        l3.setText("0");
+        l4.setText("0");
+        l8.setText("0");
+        l9.setText("0");
+        l10.setText("0");
+        l11.setText("0");
+        l12.setText("0");
+        l13.setText("0");
+        l14.setText("0");
+        l15.setText("0");
+        l16.setText("0");
+        l17.setText("0");
+        l18.setText("0");
+        l19.setText("0");
+        l20.setText("0");
+        l21.setText("0");
+        l22.setText("0");
+        
+        
+        /////////////////
+
+        n1.setText("");
+        n2.setText("");
+        n3.setText("");
 
         promedioNs = 0;
         promedioMs = 0;
