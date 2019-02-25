@@ -15,14 +15,6 @@ public class RecorrerArreglo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
-   /*
-   ClaseArray a = new ClaseArray();
-        a.agregarDatos(500000);
-       // a.recorrerFOR();
-        a.recorrerForEach();
-        */
-   
    InterfazArreglo ia = new InterfazArreglo();
    ia.setVisible(true);
     }

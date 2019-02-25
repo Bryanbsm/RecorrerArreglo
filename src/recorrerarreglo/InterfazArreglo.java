@@ -569,6 +569,11 @@ public class InterfazArreglo extends javax.swing.JFrame {
         jLabel1.setText("Cantidad de Elementos");
 
         f1.setText("5000");
+        f1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f1ActionPerformed(evt);
+            }
+        });
 
         add.setText("Agregar Elementos");
         add.addActionListener(new java.awt.event.ActionListener() {
@@ -624,10 +629,20 @@ public class InterfazArreglo extends javax.swing.JFrame {
         n2.setBackground(new java.awt.Color(204, 204, 0));
         n2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         n2.setText("ForEach");
+        n2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                n2ActionPerformed(evt);
+            }
+        });
 
         n3.setBackground(new java.awt.Color(255, 0, 0));
         n3.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         n3.setText("Iterator");
+        n3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                n3ActionPerformed(evt);
+            }
+        });
 
         delete.setText("Borrar");
         delete.addActionListener(new java.awt.event.ActionListener() {
@@ -719,7 +734,8 @@ public class InterfazArreglo extends javax.swing.JFrame {
 
     private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
 
-        r1.setEnabled(true);
+        try {
+            r1.setEnabled(true);
         r2.setEnabled(true);
         r3.setEnabled(true);
         if (Integer.parseInt(f1.getText()) >= 10000000) {
@@ -727,7 +743,11 @@ public class InterfazArreglo extends javax.swing.JFrame {
         }
         agregarDatos(Integer.parseInt(f1.getText()));
         JOptionPane.showMessageDialog(null, "Datos agregados Correctamente");
-        add.setEnabled(false);
+        add.setEnabled(false);            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+        
     }//GEN-LAST:event_addActionPerformed
 
     private void r1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r1ActionPerformed
@@ -854,6 +874,18 @@ public class InterfazArreglo extends javax.swing.JFrame {
 
     }//GEN-LAST:event_deleteActionPerformed
 
+    private void n2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_n2ActionPerformed
+
+    private void n3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_n3ActionPerformed
+
+    private void f1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -962,22 +994,22 @@ public class InterfazArreglo extends javax.swing.JFrame {
     public void agregarDatos(int a) {
 
         for (int i = 0; i < a; i++) {
-            lista.add(((int) (Math.random() * 999 + 1)));
+            lista.add(i,((int) (Math.random() * 999 + 1)));
         }
     }
 
     public void recorrerFOR() {
         for (int i = 0; i < lista.size(); i++) {
-            System.out.println(i + "-->" + lista.get(i));
-            f2.setText(i + " = " + String.valueOf(lista.get(i)));
+            System.out.println(i + "-->" + lista.get(i)); 
+            f2.setText(i + " = " + String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
         }
     }
 
     public void recorrerForEach() {
-        for (int i : lista) {
+        lista.forEach((i) -> {
             // System.out.println("-->" + (i));
             f5.setText(String.valueOf(i));
-        }
+        });
     }
 
     public void recorrerIterador() {
