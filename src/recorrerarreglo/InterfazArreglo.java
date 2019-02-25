@@ -1,4 +1,3 @@
-
 package recorrerarreglo;
 
 import java.awt.Color;
@@ -736,18 +735,18 @@ public class InterfazArreglo extends javax.swing.JFrame {
 
         try {
             r1.setEnabled(true);
-        r2.setEnabled(true);
-        r3.setEnabled(true);
-        if (Integer.parseInt(f1.getText()) >= 10000000) {
-            JOptionPane.showMessageDialog(null, "Puede Tardar un Momento \nPor favor Espere...");
-        }
-        agregarDatos(Integer.parseInt(f1.getText()));
-        JOptionPane.showMessageDialog(null, "Datos agregados Correctamente");
-        add.setEnabled(false);            
+            r2.setEnabled(true);
+            r3.setEnabled(true);
+            if (Integer.parseInt(f1.getText()) >= 10000000) {
+                JOptionPane.showMessageDialog(null, "Puede Tardar un Momento \nPor favor Espere...");
+            }
+            agregarDatos(Integer.parseInt(f1.getText()));
+            JOptionPane.showMessageDialog(null, "Datos agregados Correctamente");
+            add.setEnabled(false);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
-        
+
     }//GEN-LAST:event_addActionPerformed
 
     private void r1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r1ActionPerformed
@@ -785,7 +784,7 @@ public class InterfazArreglo extends javax.swing.JFrame {
     }//GEN-LAST:event_r1ActionPerformed
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        System.exit(0);        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_exitActionPerformed
 
     private void r2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
@@ -994,21 +993,22 @@ public class InterfazArreglo extends javax.swing.JFrame {
     public void agregarDatos(int a) {
 
         for (int i = 0; i < a; i++) {
-            lista.add(i,((int) (Math.random() * 999 + 1)));
+            lista.add(i, ((int) (Math.random() * 999 + 1)));
         }
     }
 
     public void recorrerFOR() {
         for (int i = 0; i < lista.size(); i++) {
-            System.out.println(i + "-->" + lista.get(i)); 
-            f2.setText(i + " = " + String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
+            System.out.println(i + "-->" + lista.get(i));
+            //   f2.setText(i + " = " + String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
+
         }
     }
 
     public void recorrerForEach() {
         lista.forEach((i) -> {
-            // System.out.println("-->" + (i));
-            f5.setText(String.valueOf(i));
+            System.out.println("-->" + (i));
+            //    f5.setText(String.valueOf(i));
         });
     }
 
@@ -1016,8 +1016,8 @@ public class InterfazArreglo extends javax.swing.JFrame {
         Iterator<Integer> iterador = lista.iterator();
         while (iterador.hasNext()) {
             Integer llave = iterador.next();
-            // System.out.println("-->" + (llave));
-            f6.setText(String.valueOf(llave));
+            System.out.println("-->" + (llave));
+            //   f6.setText(String.valueOf(llave));
         }
     }
 
@@ -1052,15 +1052,15 @@ public class InterfazArreglo extends javax.swing.JFrame {
     }
 
     public void clearTxt(javax.swing.JPanel pi) {
-        
+
         for (int i = 0; pi.getComponents().length > i; i++) {
             if (pi.getComponents()[1] instanceof JTextField) {
                 ((JTextField) pi.getComponents()[i]).setText("");
                 ((JTextField) pi.getComponents()[i]).updateUI();
-                
+
             }
         }
-        
+
         contFor = 1;
         contForEach = 1;
         contIterator = 1;
