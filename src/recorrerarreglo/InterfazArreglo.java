@@ -622,12 +622,10 @@ public class InterfazArreglo extends javax.swing.JFrame {
 
         n1.setBackground(new java.awt.Color(0, 204, 0));
         n1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        n1.setText("For");
         n1.setSelectionColor(new java.awt.Color(255, 255, 51));
 
         n2.setBackground(new java.awt.Color(204, 204, 0));
         n2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        n2.setText("ForEach");
         n2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 n2ActionPerformed(evt);
@@ -636,7 +634,6 @@ public class InterfazArreglo extends javax.swing.JFrame {
 
         n3.setBackground(new java.awt.Color(255, 0, 0));
         n3.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        n3.setText("Iterator");
         n3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 n3ActionPerformed(evt);
