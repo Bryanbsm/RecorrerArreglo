@@ -12,7 +12,7 @@ import javax.swing.JTextField;
  *
  * @author Lenovo
  */
-public class InterfazArreglo extends javax.swing.JFrame {
+public class InterfazArrayList extends javax.swing.JFrame {
 
     // DefaultListModel numeros = new DefaultListModel();
     final double Milisegundos = 1000;
@@ -46,7 +46,7 @@ public class InterfazArreglo extends javax.swing.JFrame {
     // public ClaseArray lista;
     ArrayList<Integer> lista = new ArrayList();
 
-    public InterfazArreglo() {
+    public InterfazArrayList() {
         initComponents();
          n1.setText("");
         n2.setText("");
@@ -610,7 +610,7 @@ public class InterfazArreglo extends javax.swing.JFrame {
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Mejor Tiempo"));
 
-        exit.setText("Salir");
+        exit.setText("Volver");
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exitActionPerformed(evt);
@@ -784,7 +784,9 @@ public class InterfazArreglo extends javax.swing.JFrame {
     }//GEN-LAST:event_r1ActionPerformed
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        System.exit(0);
+       Principal p = new Principal();
+       p.setVisible(true);
+       dispose();
     }//GEN-LAST:event_exitActionPerformed
 
     private void r2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
@@ -902,20 +904,21 @@ public class InterfazArreglo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(InterfazArreglo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazArrayList.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(InterfazArreglo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazArrayList.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(InterfazArreglo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazArrayList.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(InterfazArreglo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazArrayList.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new InterfazArreglo().setVisible(true);
+                new InterfazArrayList().setVisible(true);
             }
         });
     }
