@@ -1001,10 +1001,13 @@ public class InterfazArrayList extends javax.swing.JFrame {
     }
 
     public void recorrerFOR() {
+        
         for (int i = 0; i < lista.size(); i++) {
-                      //System.out.println(i + "-->" + lista.get(i)); 
-            f2.setText(String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
+           
+                      System.out.println(i + "-->" + lista.get(i)); 
+           // f2.setText(String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
         }
+       
     }
 
     public void recorrerForEach() {
