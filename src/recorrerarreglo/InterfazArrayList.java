@@ -81,8 +81,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         l9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        l10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        l10 = new javax.swing.JTextField();
         jl2 = new javax.swing.JLabel();
         n10 = new javax.swing.JButton();
         f500 = new javax.swing.JTextField();
@@ -103,8 +103,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         l15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        l16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        l16 = new javax.swing.JTextField();
         jl3 = new javax.swing.JLabel();
         f501 = new javax.swing.JTextField();
         n11 = new javax.swing.JButton();
@@ -125,8 +125,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         l21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        l22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
+        l22 = new javax.swing.JTextField();
         jl4 = new javax.swing.JLabel();
         n12 = new javax.swing.JButton();
         f502 = new javax.swing.JTextField();
@@ -219,9 +219,9 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         jLabel10.setText("Milisegundos");
 
-        l10.setText("0");
-
         jLabel11.setText("Segundos");
+
+        l10.setText("jTextField1");
 
         javax.swing.GroupLayout p9Layout = new javax.swing.GroupLayout(p9);
         p9.setLayout(p9Layout);
@@ -230,13 +230,10 @@ public class InterfazArrayList extends javax.swing.JFrame {
             .addGroup(p9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(l10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(p9Layout.createSequentialGroup()
-                        .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(l8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(l9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
+                    .addComponent(l8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(l9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(l10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -256,8 +253,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(l10)
-                    .addComponent(jLabel11)))
+                    .addComponent(jLabel11)
+                    .addComponent(l10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         jl2.setText("0");
@@ -392,9 +389,9 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         jLabel16.setText("Milisegundos");
 
-        l16.setText("0");
-
         jLabel17.setText("Segundos");
+
+        l16.setText("jTextField2");
 
         javax.swing.GroupLayout p12Layout = new javax.swing.GroupLayout(p12);
         p12.setLayout(p12Layout);
@@ -403,10 +400,14 @@ public class InterfazArrayList extends javax.swing.JFrame {
             .addGroup(p12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(p12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(l16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(l15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(l14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                    .addGroup(p12Layout.createSequentialGroup()
+                        .addGroup(p12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(l15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
+                            .addComponent(l14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18))
+                    .addGroup(p12Layout.createSequentialGroup()
+                        .addComponent(l16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(p12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -426,8 +427,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(jLabel16))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(p12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(l16)
-                    .addComponent(jLabel17)))
+                    .addComponent(jLabel17)
+                    .addComponent(l16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         jl3.setText("0");
@@ -486,12 +487,12 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(r2)
                     .addComponent(jl3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(n11)
+                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel27)
                         .addComponent(jLabel28)
-                        .addComponent(f501, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(f501, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(n11))
                 .addGap(4, 4, 4)
                 .addComponent(p11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -569,9 +570,9 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         jLabel22.setText("Milisegundos");
 
-        l22.setText("0");
-
         jLabel23.setText("Segundos");
+
+        l22.setText("jTextField3");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -579,10 +580,11 @@ public class InterfazArrayList extends javax.swing.JFrame {
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(l22, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
-                    .addComponent(l20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(l21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(l20, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
+                        .addComponent(l21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(l22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -602,9 +604,9 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(l21)
                     .addComponent(jLabel22))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(l22)
-                    .addComponent(jLabel23)))
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(l22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         jl4.setText("0");
@@ -662,12 +664,12 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(r3)
                     .addComponent(jl4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(n12)
+                .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel30)
                         .addComponent(jLabel29)
-                        .addComponent(f502, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(f502, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(n12))
                 .addGap(5, 5, 5)
                 .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1214,20 +1216,20 @@ public class InterfazArrayList extends javax.swing.JFrame {
     private javax.swing.JLabel jl2;
     private javax.swing.JLabel jl3;
     private javax.swing.JLabel jl4;
-    private javax.swing.JLabel l10;
+    private javax.swing.JTextField l10;
     private javax.swing.JLabel l11;
     private javax.swing.JLabel l12;
     private javax.swing.JLabel l13;
     private javax.swing.JLabel l14;
     private javax.swing.JLabel l15;
-    private javax.swing.JLabel l16;
+    private javax.swing.JTextField l16;
     private javax.swing.JLabel l17;
     private javax.swing.JLabel l18;
     private javax.swing.JLabel l19;
     private javax.swing.JLabel l2;
     private javax.swing.JLabel l20;
     private javax.swing.JLabel l21;
-    private javax.swing.JLabel l22;
+    private javax.swing.JTextField l22;
     private javax.swing.JLabel l3;
     private javax.swing.JLabel l4;
     private javax.swing.JLabel l8;
