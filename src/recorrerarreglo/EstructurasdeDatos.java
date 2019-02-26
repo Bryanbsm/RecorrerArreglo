@@ -15,7 +15,8 @@ public class EstructurasdeDatos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-          Principal p = new Principal();
+        //  Principal p = new Principal();
+        InterfazArrayList p = new InterfazArrayList();
        p.setVisible(true);
     }
     

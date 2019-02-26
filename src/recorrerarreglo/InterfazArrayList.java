@@ -48,7 +48,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
     public InterfazArrayList() {
         initComponents();
-         n1.setText("");
+        n1.setText("");
         n2.setText("");
         n3.setText("");
         setLocationRelativeTo(null);
@@ -84,6 +84,10 @@ public class InterfazArrayList extends javax.swing.JFrame {
         l10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jl2 = new javax.swing.JLabel();
+        n10 = new javax.swing.JButton();
+        f500 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
         p2 = new javax.swing.JPanel();
         r2 = new javax.swing.JButton();
         f5 = new javax.swing.JTextField();
@@ -102,6 +106,10 @@ public class InterfazArrayList extends javax.swing.JFrame {
         l16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jl3 = new javax.swing.JLabel();
+        f501 = new javax.swing.JTextField();
+        n11 = new javax.swing.JButton();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
         p3 = new javax.swing.JPanel();
         r3 = new javax.swing.JButton();
         f6 = new javax.swing.JTextField();
@@ -120,6 +128,10 @@ public class InterfazArrayList extends javax.swing.JFrame {
         l22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jl4 = new javax.swing.JLabel();
+        n12 = new javax.swing.JButton();
+        f502 = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         f1 = new javax.swing.JTextField();
@@ -136,7 +148,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        p1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "For"));
+        p1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
         p1.setMaximumSize(new java.awt.Dimension(266, 282));
 
         r1.setText("Recorrer");
@@ -149,7 +161,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         f2.setEditable(false);
 
-        p7.setBorder(javax.swing.BorderFactory.createTitledBorder("El algoritmo tardo"));
+        p7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         l2.setText("0");
 
@@ -197,7 +209,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(jLabel7)))
         );
 
-        p9.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)), "Promedio For"));
+        p9.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         l8.setText("0");
 
@@ -218,12 +230,12 @@ public class InterfazArrayList extends javax.swing.JFrame {
             .addGroup(p9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(l10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(p9Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(l9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(l8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(l10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(l8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(l9, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addGroup(p9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -250,6 +262,20 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         jl2.setText("0");
 
+        n10.setText("recorrer");
+        n10.setEnabled(false);
+        n10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                n10ActionPerformed(evt);
+            }
+        });
+
+        f500.setText("2");
+
+        jLabel4.setText("Realizar");
+
+        jLabel26.setText("Iteraciones");
+
         javax.swing.GroupLayout p1Layout = new javax.swing.GroupLayout(p1);
         p1.setLayout(p1Layout);
         p1Layout.setHorizontalGroup(
@@ -263,8 +289,16 @@ public class InterfazArrayList extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(r1)
                         .addGap(18, 18, 18)
-                        .addComponent(jl2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(p9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jl2, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, p1Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(f500, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(n10))
+                    .addComponent(p9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         p1Layout.setVerticalGroup(
@@ -275,14 +309,20 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(f2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(r1)
                     .addComponent(jl2))
-                .addGap(34, 34, 34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(p1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(n10)
+                    .addComponent(f500, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(p7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(p9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11))
         );
 
-        p2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "For Each"));
+        p2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         r2.setText("Recorrer");
         r2.setEnabled(false);
@@ -294,7 +334,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         f5.setEditable(false);
 
-        p11.setBorder(javax.swing.BorderFactory.createTitledBorder("El algoritmo tardo"));
+        p11.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         l11.setText("0");
 
@@ -342,7 +382,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(jLabel14)))
         );
 
-        p12.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)), "Promedio ForEach"));
+        p12.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         l14.setText("0");
 
@@ -363,8 +403,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
             .addGroup(p12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(p12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(l16, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
-                    .addComponent(l15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+                    .addComponent(l16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(l15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(l14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(p12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -392,21 +432,49 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         jl3.setText("0");
 
+        f501.setText("2");
+
+        n11.setText("recorrer");
+        n11.setEnabled(false);
+        n11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                n11ActionPerformed(evt);
+            }
+        });
+
+        jLabel28.setText("Iteraciones");
+
+        jLabel27.setText("Realizar");
+
         javax.swing.GroupLayout p2Layout = new javax.swing.GroupLayout(p2);
         p2.setLayout(p2Layout);
         p2Layout.setHorizontalGroup(
-            p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(p2Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(p11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(p12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(p2Layout.createSequentialGroup()
-                        .addComponent(f5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(r2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jl3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(p12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(p2Layout.createSequentialGroup()
+                                .addComponent(jLabel27)
+                                .addGap(10, 10, 10)
+                                .addComponent(f501, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel28)
+                                .addGap(14, 14, 14))
+                            .addGroup(p2Layout.createSequentialGroup()
+                                .addComponent(f5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(r2)))
+                        .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(p2Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jl3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, p2Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(n11)))))
                 .addContainerGap())
         );
         p2Layout.setVerticalGroup(
@@ -417,14 +485,21 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(f5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(r2)
                     .addComponent(jl3))
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(n11)
+                    .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel27)
+                        .addComponent(jLabel28)
+                        .addComponent(f501, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(4, 4, 4)
                 .addComponent(p11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(p12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        p3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Iterator"));
+        p3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         r3.setText("Recorrer");
         r3.setEnabled(false);
@@ -436,7 +511,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         f6.setEditable(false);
 
-        jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder("El algoritmo tardo"));
+        jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         l17.setText("0");
 
@@ -478,13 +553,13 @@ public class InterfazArrayList extends javax.swing.JFrame {
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(l18)
                     .addComponent(jLabel19))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(l19)
                     .addComponent(jLabel20)))
         );
 
-        jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)), "Promedio Iterator"));
+        jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
 
         l20.setText("0");
 
@@ -508,7 +583,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(l22, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
                     .addComponent(l20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(l21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -534,6 +609,20 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         jl4.setText("0");
 
+        n12.setText("recorrer");
+        n12.setEnabled(false);
+        n12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                n12ActionPerformed(evt);
+            }
+        });
+
+        f502.setText("2");
+
+        jLabel29.setText("Iteraciones");
+
+        jLabel30.setText("Realizar");
+
         javax.swing.GroupLayout p3Layout = new javax.swing.GroupLayout(p3);
         p3.setLayout(p3Layout);
         p3Layout.setHorizontalGroup(
@@ -542,13 +631,26 @@ public class InterfazArrayList extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(p3Layout.createSequentialGroup()
-                        .addComponent(f6, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(r3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jl4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, p3Layout.createSequentialGroup()
+                                .addComponent(jLabel30)
+                                .addGap(18, 18, 18)
+                                .addComponent(f502, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel29))
+                            .addGroup(p3Layout.createSequentialGroup()
+                                .addComponent(f6, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(r3)))
+                        .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(p3Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jl4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, p3Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                                .addComponent(n12)))))
                 .addContainerGap())
         );
         p3Layout.setVerticalGroup(
@@ -559,14 +661,21 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(f6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(r3)
                     .addComponent(jl4))
-                .addGap(34, 34, 34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(n12)
+                    .addGroup(p3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel30)
+                        .addComponent(jLabel29)
+                        .addComponent(f502, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(5, 5, 5)
                 .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
 
         jLabel1.setText("Cantidad de Elementos");
 
@@ -669,8 +778,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
                 .addComponent(n3, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(delete)
-                .addGap(33, 33, 33)
-                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
         );
         jPanel6Layout.setVerticalGroup(
@@ -696,18 +805,17 @@ public class InterfazArrayList extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(p1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(p2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(p3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                                .addComponent(p3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -737,11 +845,15 @@ public class InterfazArrayList extends javax.swing.JFrame {
             r1.setEnabled(true);
             r2.setEnabled(true);
             r3.setEnabled(true);
+            n10.setEnabled(true);
+            n11.setEnabled(true);
+            n12.setEnabled(true);
+
             if (Integer.parseInt(f1.getText()) >= 10000000) {
                 JOptionPane.showMessageDialog(null, "Puede Tardar un Momento \nPor favor Espere...");
             }
             agregarDatos(Integer.parseInt(f1.getText()));
-            JOptionPane.showMessageDialog(null, "Datos agregados Correctamente");
+            //  JOptionPane.showMessageDialog(null, "Datos agregados Correctamente");
             add.setEnabled(false);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
@@ -784,9 +896,10 @@ public class InterfazArrayList extends javax.swing.JFrame {
     }//GEN-LAST:event_r1ActionPerformed
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-       Principal p = new Principal();
-       p.setVisible(true);
-       dispose();
+//        Principal p = new Principal();
+        //      p.setVisible(true);
+        System.exit(0);
+//    dispose();
     }//GEN-LAST:event_exitActionPerformed
 
     private void r2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
@@ -887,6 +1000,138 @@ public class InterfazArrayList extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_f1ActionPerformed
 
+    private void n10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n10ActionPerformed
+        try {
+            int cant = Integer.parseInt(f500.getText());
+
+            for (int i = 1; i <= cant; i++) {
+
+                jl2.setText(String.valueOf(contFor));
+
+                long inicioMs = System.currentTimeMillis();
+                long inicioNs = System.nanoTime();
+                recorrerFOR();
+                long duracionMs = System.currentTimeMillis() - inicioMs;
+                long duracionNs = System.nanoTime() - inicioNs;
+                double duracionS1 = duracionNs / Nanosegundos;
+                //  double duracionS2 = duracionNs / Nanosegundos;
+
+                l2.setText(String.valueOf(duracionNs));
+                l3.setText(String.valueOf(duracionMs));
+                l4.setText(String.valueOf(duracionS1));
+
+                forConjuntoNs += duracionNs;
+                forConjuntoMs += duracionMs;
+                forConjuntoS1 += duracionS1;
+
+                promedioNs = (forConjuntoNs) / contFor;
+                promedioMs = (forConjuntoMs) / contFor;
+                promedioS1 = (forConjuntoS1) / contFor;
+
+                l8.setText(String.valueOf(promedioNs));
+                l9.setText(String.valueOf(promedioMs));
+                l10.setText(String.valueOf(String.format("%.9f", promedioS1)));
+
+                contFor++;
+                forMili = promedioNs;
+                mejorTiempo(forMili, forEachMili, iteratorMili);
+
+                // JOptionPane.showMessageDialog(null,"faltan "+(10-i)+" iteraciones");
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
+
+    }//GEN-LAST:event_n10ActionPerformed
+
+    private void n11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n11ActionPerformed
+        try {
+            int cant = Integer.parseInt(f501.getText());
+
+            for (int i = 1; i <= cant; i++) {
+                jl3.setText(String.valueOf(contForEach));
+
+                long inicioMs = System.currentTimeMillis();
+                long inicioNs = System.nanoTime();
+                recorrerForEach();
+                long duracionMs = System.currentTimeMillis() - inicioMs;
+                long duracionNs = System.nanoTime() - inicioNs;
+                double duracionS1 = duracionNs / Nanosegundos;
+                //  double duracionS2 = duracionNs / Nanosegundos;
+
+                l11.setText(String.valueOf(duracionNs));
+                l12.setText(String.valueOf(duracionMs));
+                l13.setText(String.valueOf(duracionS1));
+
+                forEachconjuntoNs += duracionNs;
+                forEachconjuntoMs += duracionMs;
+                forEachconjuntoS1 += duracionS1;
+
+                promedioNs = (forEachconjuntoNs) / contForEach;
+                promedioMs = (forEachconjuntoMs) / contForEach;
+                promedioS1 = (forEachconjuntoS1) / contForEach;
+
+                l14.setText(String.valueOf(promedioNs));
+                l15.setText(String.valueOf(promedioMs));
+                l16.setText(String.valueOf(String.format("%.9f", promedioS1)));
+
+                contForEach++;
+                forEachMili = promedioNs;
+                mejorTiempo(forMili, forEachMili, iteratorMili);
+
+            }
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
+    }//GEN-LAST:event_n11ActionPerformed
+
+    private void n12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n12ActionPerformed
+        try {
+            int cant = Integer.parseInt(f502.getText());
+
+            for (int i = 1; i <= cant; i++) {
+                jl4.setText(String.valueOf(contIterator));
+
+                long inicioMs = System.currentTimeMillis();
+                long inicioNs = System.nanoTime();
+                recorrerIterador();
+
+                long duracionMs = System.currentTimeMillis() - inicioMs;
+                long duracionNs = System.nanoTime() - inicioNs;
+                double duracionS1 = duracionNs / Nanosegundos;
+                //  double duracionS2 = duracionNs / Nanosegundos;
+
+                l17.setText(String.valueOf(duracionNs));
+                l18.setText(String.valueOf(duracionMs));
+                l19.setText(String.valueOf(duracionS1));
+
+                iteradorConjuntoNs += duracionNs;
+                iteradorConjuntoMs += duracionMs;
+                iteradorConjuntoS1 += duracionS1;
+
+                promedioNs = (iteradorConjuntoNs) / contIterator;
+                promedioMs = (iteradorConjuntoMs) / contIterator;
+                promedioS1 = (iteradorConjuntoS1) / contIterator;
+
+                l20.setText(String.valueOf(promedioNs));
+                l21.setText(String.valueOf(promedioMs));
+                l22.setText(String.valueOf(String.format("%.9f", promedioS1)));
+
+                contIterator++;
+                iteratorMili = promedioNs;
+                mejorTiempo(forMili, forEachMili, iteratorMili);
+
+            }
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
+    }//GEN-LAST:event_n12ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -930,6 +1175,9 @@ public class InterfazArrayList extends javax.swing.JFrame {
     private javax.swing.JTextField f1;
     private javax.swing.JTextField f2;
     private javax.swing.JTextField f5;
+    private javax.swing.JTextField f500;
+    private javax.swing.JTextField f501;
+    private javax.swing.JTextField f502;
     private javax.swing.JTextField f6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -949,7 +1197,13 @@ public class InterfazArrayList extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
@@ -979,6 +1233,9 @@ public class InterfazArrayList extends javax.swing.JFrame {
     private javax.swing.JLabel l8;
     private javax.swing.JLabel l9;
     private javax.swing.JTextField n1;
+    private javax.swing.JButton n10;
+    private javax.swing.JButton n11;
+    private javax.swing.JButton n12;
     private javax.swing.JTextField n2;
     private javax.swing.JTextField n3;
     private javax.swing.JPanel p1;
@@ -1001,18 +1258,19 @@ public class InterfazArrayList extends javax.swing.JFrame {
     }
 
     public void recorrerFOR() {
-        
+
         for (int i = 0; i < lista.size(); i++) {
-           
-                      System.out.println(i + "-->" + lista.get(i)); 
-           // f2.setText(String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
+
+            System.out.println(i + "-->" + lista.get(i));
+            // f2.setText(String.valueOf(lista.get(i))); // creo que lo qeu pasa es que va muy rapido y no se alcanza a imprimir todos los elemntos
         }
-       
+
     }
 
     public void recorrerForEach() {
         lista.forEach((i) -> {
-           f5.setText(String.valueOf(lista.get(i)));
+            // f5.setText(String.valueOf(lista.get(i)));
+            System.out.println("-->" + lista.get(i));
         });
     }
 
@@ -1020,40 +1278,41 @@ public class InterfazArrayList extends javax.swing.JFrame {
         Iterator<Integer> iterador = lista.iterator();
         while (iterador.hasNext()) {
             Integer llave = iterador.next();
-            f6.setText(String.valueOf(llave));
+            // f6.setText(String.valueOf(llave));
+            System.out.println("-->" + lista.get(llave));
         }
     }
 
     public void mejorTiempo(long forM, long forEachm, long iteraM) {
 
-        if((l2.getText() != "0") &&(l11.getText() != "0") &&(l17.getText() != "0")){
-             if (forM < forEachm && forEachm < iteraM) {
-            n1.setText("For");
-            n2.setText("ForEach");
-            n3.setText("Iterator");
-        } else if (forM < iteraM && iteraM < forEachm) {
-            n1.setText("For");
-            n2.setText("iterator");
-            n3.setText("ForEach");
-        } else if (forEachm <= iteraM && iteraM < forM) {
-            n1.setText("ForEach");
-            n2.setText("Iterator");
-            n3.setText("For");
-        } else if (forEachm <= forM && forM < iteraM) {
-            n1.setText("ForEach");
-            n2.setText("For");
-            n3.setText("Iterator");
-        } else if (iteraM < forEachm && forEachm < forM) {
-            n1.setText("Iterator");
-            n2.setText("ForEach");
-            n3.setText("For");
-        } else if (iteraM < forM && forM < forEachm) {
-            n1.setText("iterator");
-            n2.setText("For");
-            n3.setText("ForEach");
-        }
-        } else{
-             n1.setText("");
+        if ((l2.getText() != "0") && (l11.getText() != "0") && (l17.getText() != "0")) {
+            if (forM < forEachm && forEachm < iteraM) {
+                n1.setText("For");
+                n2.setText("ForEach");
+                n3.setText("Iterator");
+            } else if (forM < iteraM && iteraM < forEachm) {
+                n1.setText("For");
+                n2.setText("iterator");
+                n3.setText("ForEach");
+            } else if (forEachm <= iteraM && iteraM < forM) {
+                n1.setText("ForEach");
+                n2.setText("Iterator");
+                n3.setText("For");
+            } else if (forEachm <= forM && forM < iteraM) {
+                n1.setText("ForEach");
+                n2.setText("For");
+                n3.setText("Iterator");
+            } else if (iteraM < forEachm && forEachm < forM) {
+                n1.setText("Iterator");
+                n2.setText("ForEach");
+                n3.setText("For");
+            } else if (iteraM < forM && forM < forEachm) {
+                n1.setText("iterator");
+                n2.setText("For");
+                n3.setText("ForEach");
+            }
+        } else {
+            n1.setText("");
             n2.setText("");
             n3.setText("");
         }
@@ -1073,16 +1332,15 @@ public class InterfazArrayList extends javax.swing.JFrame {
         contFor = 1;
         contForEach = 1;
         contIterator = 1;
-        
+
         jl2.setText("0");
         jl3.setText("0");
         jl4.setText("0");
         f2.setText("");
         f5.setText("");
         f6.setText("");
-      
+
         //////////////////
-        
         l2.setText("0");
         l3.setText("0");
         l4.setText("0");
@@ -1101,10 +1359,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
         l20.setText("0");
         l21.setText("0");
         l22.setText("0");
-        
-        
-        /////////////////
 
+        /////////////////
         n1.setText("");
         n2.setText("");
         n3.setText("");
