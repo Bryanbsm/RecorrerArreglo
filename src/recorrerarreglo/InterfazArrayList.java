@@ -148,7 +148,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        p1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        p1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "For"));
         p1.setMaximumSize(new java.awt.Dimension(266, 282));
 
         r1.setText("Recorrer");
@@ -161,7 +161,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         f2.setEditable(false);
 
-        p7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        p7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "El Algoritmo Tardo"));
 
         l2.setText("0");
 
@@ -319,7 +319,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
                 .addGap(11, 11, 11))
         );
 
-        p2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        p2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "ForEach"));
 
         r2.setText("Recorrer");
         r2.setEnabled(false);
@@ -331,7 +331,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         f5.setEditable(false);
 
-        p11.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        p11.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "El Algoritmo Tardo"));
 
         l11.setText("0");
 
@@ -379,7 +379,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(jLabel14)))
         );
 
-        p12.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        p12.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio ForEach"));
 
         l14.setText("0");
 
@@ -500,7 +500,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        p3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        p3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Iterator"));
 
         r3.setText("Recorrer");
         r3.setEnabled(false);
@@ -512,7 +512,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
         f6.setEditable(false);
 
-        jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "El Algoritmo Tardo"));
 
         l17.setText("0");
 
@@ -560,7 +560,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
                     .addComponent(jLabel20)))
         );
 
-        jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio For"));
+        jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2), "Promedio Iterator"));
 
         l20.setText("0");
 
