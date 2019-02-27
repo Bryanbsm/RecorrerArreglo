@@ -35,7 +35,8 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="p2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="p3" max="32767" attributes="0"/>
+                              <Component id="p3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -49,18 +50,11 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="p1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="p3" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="p2" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <Component id="p3" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="p2" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="p1" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
@@ -96,11 +90,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="p7" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="f2" min="-2" pref="85" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="f2" min="-2" pref="54" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                           <Component id="r1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Component id="jl2" pref="65" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jl2" min="-2" pref="52" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
@@ -137,7 +131,7 @@
                   <Component id="p7" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="p9" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -145,7 +139,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="r1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Recorrer"/>
+            <Property name="text" type="java.lang.String" value="Recorrer Una Vez"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -205,7 +199,7 @@
                           <Component id="l3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="7" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="l4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -393,7 +387,7 @@
                       <Component id="p12" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
                                   <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                   <Component id="f501" min="-2" pref="45" max="-2" attributes="0"/>
@@ -401,21 +395,16 @@
                                   <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="f5" min="-2" pref="85" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="f5" min="-2" pref="53" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                   <Component id="r2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Component id="jl3" pref="67" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="n11" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="n11" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jl3" alignment="1" min="-2" pref="41" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -453,7 +442,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="r2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Recorrer"/>
+            <Property name="text" type="java.lang.String" value="Recorrer Una Vez"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -578,7 +567,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="l15" alignment="1" pref="134" max="32767" attributes="0"/>
+                                  <Component id="l15" alignment="1" max="32767" attributes="0"/>
                                   <Component id="l14" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -707,7 +696,12 @@
                       <Component id="jPanel14" alignment="0" max="32767" attributes="0"/>
                       <Component id="jPanel15" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="f6" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="r3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -715,21 +709,11 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="f6" min="-2" pref="85" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="r3" min="-2" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Component id="jl4" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace pref="29" max="32767" attributes="0"/>
-                                  <Component id="n12" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="n12" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jl4" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -767,7 +751,7 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="r3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Recorrer"/>
+            <Property name="text" type="java.lang.String" value="Recorrer Una Vez"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -1086,7 +1070,7 @@
                   <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="n3" min="-2" pref="102" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="253" max="32767" attributes="0"/>
                   <Component id="delete" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="exit" min="-2" pref="78" max="-2" attributes="0"/>
