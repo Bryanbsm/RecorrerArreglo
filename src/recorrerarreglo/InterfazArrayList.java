@@ -997,7 +997,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
         try {
             int cant = Integer.parseInt(f500.getText());
 
-            for (int i = 1; i <= cant; i++) {
+            for (int i = 1; i <= cant; i++) { 
 
                 jl2.setText(String.valueOf(contFor));
 
@@ -1023,7 +1023,7 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
                 l8.setText(String.valueOf(promedioNs));
                 l9.setText(String.valueOf(promedioMs));
-                l10.setText(String.valueOf(String.format("%.9f", promedioS1)));
+                 l10.setText(String.valueOf(String.format("%.9f", promedioS1)));
 
                 contFor++;
                 forMili = promedioNs;
@@ -1031,6 +1031,8 @@ public class InterfazArrayList extends javax.swing.JFrame {
 
                 // JOptionPane.showMessageDialog(null,"faltan "+(10-i)+" iteraciones");
             }
+            n11ActionPerformed(evt);
+            n12ActionPerformed(evt);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
