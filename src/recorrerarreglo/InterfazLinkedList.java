@@ -1049,7 +1049,9 @@ public class InterfazLinkedList extends javax.swing.JFrame {
                 contFor++;
                 forMili = promedioNs;
                 mejorTiempo(forMili, forEachMili, iteratorMili);
-
+                
+                            n11ActionPerformed(evt);
+            n12ActionPerformed(evt);
                 // JOptionPane.showMessageDialog(null,"faltan "+(10-i)+" iteraciones");
             }
         } catch (Exception e) {
